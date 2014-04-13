@@ -7,131 +7,83 @@
   <link rel="icon" 
     type="image/png" 
     href="http://mollietaylor.com/favicon.png">
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
-  <!--[if lte IE 8]>
-      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
-  <![endif]-->
-  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="http://mollietaylor.com/files/leaflet.ajax.js"></script>
-  <script type="text/javascript" src="counts.js"></script>
   <style type="text/css">
   
-  html, body{
-    padding: 0;
-    margin: 0 auto;
+  html {
     height: 100%;
     width: 100%;
   }
 
-  #map {
-/*    width: 80%;
-    height: -mox-calc(100% - 36px - 50px - 50px);
-    height: -webkit-calc(100% - 36px - 50px - 50px);
-    height: calc(100% - 36px - 50px - 50px);*/
-    width: 100%;
+  body {
+    margin: 0 auto;
     height: 100%;
+    max-width: 800px;
   }
+
+.myButton {
+  background-color:#27ae60;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+  background-color:#f07300;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+}
+
   </style>
 </head>
 <body>
-<div id="map"></div>
 
-<script type="text/javascript">
+  <!-- cool photo of cyclist -->
+<h2>What are the Atlanta Bicycle Coalition bike counts?</h2>
+<ul>
+  <li>Manual count of how many cyclists pass through an intersection during a time period
+  <ul>
+    <li>7:00-9:00 am on a weekday</li>
+    <li>5:00-7:00 pm on a weekday</li>
+    <!--<li>12:00-2:00 pm on a Saturday</li>-->
+  </ul>
+  </li>
+  <li>Twice annually: spring and fall</li>
+</ul>
 
-  function onCount(feature, layer) {
-    var percentFemale = "Unknown";
-    if (feature.properties.malepercent != "NA") {
-      percentFemale = Math.round(feature.properties.malepercent * 100) + "%";
-    };
+<h2>Why are bike counts important?</h2>
+<ul>
+  <li>Automobile count data is frequently used for planning. Bike counts allow cycling advocacy groups to use a language familiar to planners</li>
+  <li>In other cities, counts have helped cycling groups and infrastructure acquire funding</li>
+  <li>Allow you to measure the benefits of infrastructure investment</li>
+  <li><!--<a href="http://bikepeddocumentation.org/">-->Help on a national level by using similar methodology as national efforts and being taken on the same dates</li>
+  <li>Answer questions like: How many more cyclists ride on 10th street after the addition of the cycle track?</li>
+</ul>
 
-    layer.bindPopup(feature.properties.location + "<br>Riders: " + feature.properties.total + "<br>Female: " + percentFemale);
-  };
-
-  function layerStyle(feature, latlng) {
-    // function heatColor(feature) {
-    //   if (feature.properties.total > 30) {
-    //     return "#f00"
-    //   } else {
-    //     return "#000"
-    //   };
-    // };
-
-    return new L.CircleMarker(latlng, {
-      opacity: 1,
-      color: "#fff",
-      stroke: true,
-      weight: 2,
-      // fillColor: heatColor(feature),
-      fillColor: "#27ae60",
-      fillOpacity: 0.85,
-      radius: feature.properties.total / 4
-    });
-  };
-
-  var spring2009am = L.geoJson(spring2009am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2010am = L.geoJson(spring2010am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2011am = L.geoJson(spring2011am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2012am = L.geoJson(spring2012am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2013am = L.geoJson(spring2013am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2009pm = L.geoJson(spring2009pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2010pm = L.geoJson(spring2010pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2011pm = L.geoJson(spring2011pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2012pm = L.geoJson(spring2012pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var spring2013pm = L.geoJson(spring2013pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-
-  var fall2009am = L.geoJson(fall2009am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2010am = L.geoJson(fall2010am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2011am = L.geoJson(fall2011am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2012am = L.geoJson(fall2012am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2013am = L.geoJson(fall2013am, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2009pm = L.geoJson(fall2009pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2010pm = L.geoJson(fall2010pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2011pm = L.geoJson(fall2011pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2012pm = L.geoJson(fall2012pm, {pointToLayer: layerStyle, onEachFeature: onCount});
-  var fall2013pm = L.geoJson(fall2013pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+<h2>Why visualize the data?</h2>
+<ul>
+  <li>Help prospective volunteers know their time will be well spent</li>
+  <li>Encourage more volunteers so data won't be missing</li>
+  <li>Before we can even know what questions to ask of the data and combining it with other data sources, people need to be able to easily see what data is available</li>
+</ul>
 
 
-  var map = L.map('map', {
-    center: new L.LatLng(33.78, -84.35), 
-    zoom: 12,
-    layers: [fall2012pm]
-  });
-
-  var maps = {
-    "Spring 2009 Weekday Morning": spring2009am,
-    "Spring 2010 Weekday Morning": spring2010am,
-    "Spring 2011 Weekday Morning": spring2011am,
-    "Spring 2012 Weekday Morning": spring2012am,
-    "Spring 2013 Weekday Morning<br><hr>": spring2013am,
-    "Spring 2009 Weekday Evening": spring2009pm,
-    "Spring 2010 Weekday Evening": spring2010pm,
-    "Spring 2011 Weekday Evening": spring2011pm,
-    "Spring 2012 Weekday Evening": spring2012pm,
-    "Spring 2013 Weekday Evening<br><hr>": spring2013pm,
-    "Fall 2009 Weekday Morning": fall2009am,
-    "Fall 2010 Weekday Morning": fall2010am,
-    "Fall 2011 Weekday Morning": fall2011am,
-    "Fall 2012 Weekday Morning": fall2012am,
-    "Fall 2013 Weekday Morning<br><hr>": fall2013am,
-    "Fall 2009 Weekday Evening": fall2009pm,
-    "Fall 2010 Weekday Evening": fall2010pm,
-    "Fall 2011 Weekday Evening": fall2011pm,
-    "Fall 2012 Weekday Evening": fall2012pm,
-    "Fall 2013 Weekday Evening": fall2013pm
-  };
-
-  L.control.layers(maps, null, {
-    collapsed: false
-  }).addTo(map);
-
-  L.tileLayer('http://{s}.tiles.mapbox.com/v3/mollie.hp984op1/{z}/{x}/{y}.png', {
-    attribution: '<a href="http://proximityviz.com/">Proximity Viz</a> | Base map <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a> | Bike count data from <a href="http://www.atlantabike.org/BicycleTrafficCounts" target="_blank">Atlanta Bicycle Coalition</a>',
-    maxZoom: 18
-  }).addTo(map);
-
-</script>
-
+<br><br>
+<div class="button"><a href="map.html" class="myButton">View map</a></div>
 
 
 </body>
