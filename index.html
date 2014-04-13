@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+  <title>Atlanta Bicycle Coalition Bike Counts</title>
+  <link rel="icon" 
+    type="image/png" 
+    href="http://mollietaylor.com/favicon.png">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://mollietaylor.com/files/leaflet.ajax.js"></script>
+  <script type="text/javascript" src="counts.js"></script>
+  <style type="text/css">
+  
+  html, body{
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  ul {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  #map {
+    width: 80%;
+    height: -mox-calc(100% - 36px - 50px - 50px); /*last value is for padding*/
+    height: -webkit-calc(100% - 36px - 50px - 50px);
+    height: calc(100% - 36px - 50px - 50px);
+  }
+
+  #links {
+    overflow: auto;
+    height: 50px;
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<div id="links">
+</div>
+
+<script type="text/javascript">
+
+  function onCount(feature, layer) {
+    var percentFemale = "Unknown"
+    if (feature.properties.malepercent != "NA") {
+      percentFemale = Math.round(feature.properties.malepercent * 100) + "%";
+    };
+
+    layer.bindPopup(feature.properties.location + "<br>Riders: " + feature.properties.total + "<br>Female: " + percentFemale);
+  };
+
+  var spring2013am = L.geoJson(spring2013am, {
+    onEachFeature: onCount
+  });
+
+  // if or where statement by count season
+
+  var map = L.map('map', {
+    center: new L.LatLng(33.78, -84.38), 
+    zoom: 12,
+    layers: [spring2013am]
+  });
+
+  var overlayMaps = {
+    // "<img src='book.png' height=24>In the Book": hikeLayer,
+    // "<img src='world.png' height=24>Other Greenspaces": parkLayer,
+    "Spring 2013 Weekday Morning": spring2013am
+  };
+
+  L.control.layers(null, overlayMaps, {
+    collapsed: false
+  }).addTo(map);
+
+  // or tiles #7:
+  L.tileLayer('http://{s}.tiles.mapbox.com/v3/mollie.hp984op1/{z}/{x}/{y}.png', {
+    attribution: '<a href="http://proximityviz.com/">Proximity Viz</a> | Base map <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a> | Bike count data from <a href="http://www.atlantabike.org/BicycleTrafficCounts" target="_blank">Atlanta Bicycle Coalition</a>',
+    maxZoom: 18
+  }).addTo(map);
+
+</script>
+
+
+
+</body>
+</html>
