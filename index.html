@@ -65,11 +65,28 @@
     layer.bindPopup(feature.properties.location + "<br>Riders: " + feature.properties.total + "<br>Female: " + percentFemale);
   };
 
-  var spring2013am = L.geoJson(spring2013am, {
-    onEachFeature: onCount
-  });
+  var spring2009am = L.geoJson(spring2009am, {onEachFeature: onCount});
+  var spring2010am = L.geoJson(spring2010am, {onEachFeature: onCount});
+  var spring2011am = L.geoJson(spring2011am, {onEachFeature: onCount});
+  var spring2012am = L.geoJson(spring2012am, {onEachFeature: onCount});
+  var spring2013am = L.geoJson(spring2013am, {onEachFeature: onCount});
+  var spring2009pm = L.geoJson(spring2009pm, {onEachFeature: onCount});
+  var spring2010pm = L.geoJson(spring2010pm, {onEachFeature: onCount});
+  var spring2011pm = L.geoJson(spring2011pm, {onEachFeature: onCount});
+  var spring2012pm = L.geoJson(spring2012pm, {onEachFeature: onCount});
+  var spring2013pm = L.geoJson(spring2013pm, {onEachFeature: onCount});
 
-  // if or where statement by count season
+  var fall2009am = L.geoJson(fall2009am, {onEachFeature: onCount});
+  var fall2010am = L.geoJson(fall2010am, {onEachFeature: onCount});
+  var fall2011am = L.geoJson(fall2011am, {onEachFeature: onCount});
+  var fall2012am = L.geoJson(fall2012am, {onEachFeature: onCount});
+  var fall2013am = L.geoJson(fall2013am, {onEachFeature: onCount});
+  var fall2009pm = L.geoJson(fall2009pm, {onEachFeature: onCount});
+  var fall2010pm = L.geoJson(fall2010pm, {onEachFeature: onCount});
+  var fall2011pm = L.geoJson(fall2011pm, {onEachFeature: onCount});
+  var fall2012pm = L.geoJson(fall2012pm, {onEachFeature: onCount});
+  var fall2013pm = L.geoJson(fall2013pm, {onEachFeature: onCount});
+
 
   var map = L.map('map', {
     center: new L.LatLng(33.78, -84.38), 
@@ -77,13 +94,30 @@
     layers: [spring2013am]
   });
 
-  var overlayMaps = {
-    // "<img src='book.png' height=24>In the Book": hikeLayer,
-    // "<img src='world.png' height=24>Other Greenspaces": parkLayer,
-    "Spring 2013 Weekday Morning": spring2013am
+  var maps = {
+    "Spring 2009 Weekday Morning": spring2009am,
+    "Spring 2010 Weekday Morning": spring2010am,
+    "Spring 2011 Weekday Morning": spring2011am,
+    "Spring 2012 Weekday Morning": spring2012am,
+    "Spring 2013 Weekday Morning<br><hr>": spring2013am,
+    "Spring 2009 Weekday Evening": spring2009pm,
+    "Spring 2010 Weekday Evening": spring2010pm,
+    "Spring 2011 Weekday Evening": spring2011pm,
+    "Spring 2012 Weekday Evening": spring2012pm,
+    "Spring 2013 Weekday Evening<br><hr>": spring2013pm,
+    "Fall 2009 Weekday Morning": fall2009am,
+    "Fall 2010 Weekday Morning": fall2010am,
+    "Fall 2011 Weekday Morning": fall2011am,
+    "Fall 2012 Weekday Morning": fall2012am,
+    "Fall 2013 Weekday Morning<br><hr>": fall2013am,
+    "Fall 2009 Weekday Evening": fall2009pm,
+    "Fall 2010 Weekday Evening": fall2010pm,
+    "Fall 2011 Weekday Evening": fall2011pm,
+    "Fall 2012 Weekday Evening": fall2012pm,
+    "Fall 2013 Weekday Evening": fall2013pm
   };
 
-  L.control.layers(null, overlayMaps, {
+  L.control.layers(maps, null, {
     collapsed: false
   }).addTo(map);
 
