@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+  <title>Atlanta Bicycle Coalition Bike Counts</title>
+  <link rel="icon" 
+    type="image/png" 
+    href="http://mollietaylor.com/favicon.png">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+  <![endif]-->
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <script type="text/javascript" src="http://mollietaylor.com/files/leaflet.ajax.js"></script>
+  <script type="text/javascript" src="counts.js"></script>
+  <style type="text/css">
+  
+  html, body{
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  hr {
+    border: 1px #27ae60 solid;
+    /*margin: 0px;*/
+  }
+
+  #map {
+/*    width: 80%;
+    height: -mox-calc(100% - 36px - 50px - 50px);
+    height: -webkit-calc(100% - 36px - 50px - 50px);
+    height: calc(100% - 36px - 50px - 50px);*/
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script type="text/javascript">
+
+  function onCount(feature, layer) {
+    var percentFemale = "Unknown";
+    if (feature.properties.malepercent != "NA") {
+      percentFemale = Math.round((1 - feature.properties.malepercent) * 100) + "%";
+    };
+
+    var percentHelmet = "Unknown";
+    if (feature.properties.helmet != "NA") {
+      percentHelmet = Math.round(feature.properties.helmet * 100) + "%";
+    };
+
+    layer.bindPopup(feature.properties.location + "<hr>Riders: " + feature.properties.total + "<br>Female: " + percentFemale + "<br>Helmets: " + percentHelmet);
+  };
+
+  function layerStyle(feature, latlng) {
+    // function heatColor(feature) {
+    //   if (feature.properties.total > 30) {
+    //     return "#f00"
+    //   } else {
+    //     return "#000"
+    //   };
+    // };
+
+    return new L.CircleMarker(latlng, {
+      opacity: 1,
+      color: "#fff",
+      stroke: true,
+      weight: 2,
+      // fillColor: heatColor(feature),
+      fillColor: "#27ae60",
+      fillOpacity: 0.85,
+      radius: feature.properties.total / 4
+    });
+  };
+
+  // spring2008am shouldn't exist, it's a hack for the layer control headers
+  var spring2008am = L.geoJson(spring2009am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2009am = L.geoJson(spring2009am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2010am = L.geoJson(spring2010am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2011am = L.geoJson(spring2011am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2012am = L.geoJson(spring2012am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2013am = L.geoJson(spring2013am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2009pm = L.geoJson(spring2009pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2010pm = L.geoJson(spring2010pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2011pm = L.geoJson(spring2011pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2012pm = L.geoJson(spring2012pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var spring2013pm = L.geoJson(spring2013pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+
+  var fall2009am = L.geoJson(fall2009am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2010am = L.geoJson(fall2010am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2011am = L.geoJson(fall2011am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2012am = L.geoJson(fall2012am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2013am = L.geoJson(fall2013am, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2009pm = L.geoJson(fall2009pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2010pm = L.geoJson(fall2010pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2011pm = L.geoJson(fall2011pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2012pm = L.geoJson(fall2012pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+  var fall2013pm = L.geoJson(fall2013pm, {pointToLayer: layerStyle, onEachFeature: onCount});
+
+
+  var map = L.map('map', {
+    center: new L.LatLng(33.78, -84.35), 
+    zoom: 12,
+    layers: [fall2012pm]
+  });
+
+  var maps = {
+    "<b>Spring Weekday<br>Mornings:</b>": spring2008am,
+    "2009<br>  ": spring2009am,
+    "2010<br>  ": spring2010am,
+    "2011<br>  ": spring2011am,
+    "2012<br>  ": spring2012am,
+    "2013<br><hr><strong>Spring Weekday<br>Evenings:</strong><br>": spring2013am,
+    "2009<br> ": spring2009pm,
+    "2010<br> ": spring2010pm,
+    "2011<br> ": spring2011pm,
+    "2012<br> ": spring2012pm,
+    "2013<br><hr><strong>Fall Weekday<br>Mornings:</strong><br>": spring2013pm,
+    "2009<br>": fall2009am,
+    "2010<br>": fall2010am,
+    "2011<br>": fall2011am,
+    "2012<br>": fall2012am,
+    "2013<br><hr><strong>Fall Weekday<br>Evenings:</strong><br>": fall2013am,
+    "2009": fall2009pm,
+    "2010": fall2010pm,
+    "2011": fall2011pm,
+    "2012": fall2012pm,
+    "2013": fall2013pm
+  };
+
+  L.control.layers(maps, null, {
+    collapsed: false
+  }).addTo(map);
+
+  // hack to remove first radio button: 
+  $("input[name='leaflet-base-layers']:first").remove();
+
+  L.tileLayer('http://{s}.tiles.mapbox.com/v3/mollie.hp984op1/{z}/{x}/{y}.png', {
+    attribution: '<a href="http://proximityviz.com/">Proximity Viz</a> | Base map <a href="https://www.mapbox.com/about/maps/">© Mapbox © OpenStreetMap</a> | Bike count data from <a href="http://www.atlantabike.org/BicycleTrafficCounts" target="_blank">Atlanta Bicycle Coalition</a>',
+    maxZoom: 18
+  }).addTo(map);
+
+</script>
+
+
+
+</body>
+</html>
