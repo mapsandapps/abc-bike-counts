@@ -2,17 +2,16 @@ To do list
 ==========
 * Data
 	* ~~Coords from KML~~
-	* Coords that weren't in KML
-	* Convert data to GeoJSON
-	* Better format data specifics
-	* Convert that to GeoJSON
+	* ~~Coords that weren't in KML~~
+	* ~~Better format data specifics~~
+	* ~~Convert data to GeoJSON~~
+* Map by season
+	* http://elesdoar.github.io/leaflet-control-orderlayers/
 * Map markers
 	* Colors
 		* Choropleth http://blog.thehumangeo.com/tag/leaflet/
 	* Sizes
 	* Shape
-* Map by season
-	* http://elesdoar.github.io/leaflet-control-orderlayers/
 * Add stats to popup
 	* Graph stats in popups
 * Website wrapper with purpose, info, etc.
@@ -27,8 +26,8 @@ Links
 
 What files are
 ==============
-raw-data.csv: data from ABC data link above
-locations-long.csv & locations.csv: locations of count sites, from ABC map where possible, else from google maps
-cleaning.R: takes raw-data.csv and aggregates it by season, intersection, and time of day
-seasonal.csv: cleaned data from R script
-counts.js: GeoJSON format of seasonal.csv
+* raw-data.csv: data from ABC data link above
+* locations-long.csv & locations.csv: locations of count sites, from ABC map where possible, else from google maps
+* cleaning.R: takes raw-data.csv and aggregates it by season, intersection, and time of day
+* seasonal.csv: cleaned data from R script
+* counts.js: GeoJSON format of seasonal.csv
