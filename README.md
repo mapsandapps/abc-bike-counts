@@ -23,9 +23,9 @@ To do list
 * Map markers
 	* ~~Colors~~
 	* ~~Sizes~~
-	* Decide if colors are sizes are a better way to convey data 
+	* Decide if colors or sizes are a better way to convey data 
 	* Change shape?
-* Add stats to popup
+* Add more stats to popup
 	* Graph stats in popups
 * Website wrapper with purpose, info, etc.
 * Map by stats?
