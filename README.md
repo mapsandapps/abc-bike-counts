@@ -6,11 +6,11 @@ Links
 
 What the files are
 ------------------
-* raw-data.csv: data from ABC data link above
-* locations-long.csv & locations.csv: locations of count sites, from ABC map where possible, else from google maps
-* cleaning.R: takes raw-data.csv and aggregates it by season, intersection, and time of day
-* seasonal.csv: cleaned data from R script
-* counts.js: GeoJSON format of seasonal.csv
+* manual/raw-data.csv: data from ABC data link above
+* manual/locations-long.csv & manual/locations.csv: locations of count sites, from ABC map where possible, else from google maps
+* manual/cleaning.R: takes raw-data.csv and aggregates it by season, intersection, and time of day
+* manual/seasonal.csv: cleaned data from R script
+* manual/counts.js: GeoJSON format of seasonal.csv
 
 To do list
 ----------

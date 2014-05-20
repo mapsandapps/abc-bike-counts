@@ -57,11 +57,18 @@ seasonal <- ddply(cleaned, .(season, time, location), summarize,
   malepercent = mean(male),
   male = sum(male), 
   female = sum(female), 
+  ageu18 = sum(ageu18),
+  age19to39 = sum(age19to39),
+  age40up = sum(age40up),
   helmet = mean(helmet),
   onstreet = mean(onstreet),
   trafficdirection = mean(trafficdirection),
   laws = mean(laws),
   bikelane = mean(bikelane))
+
+seasonal$percentu18 <- seasonal$ageu18 / (seasonal$ageu18 + seasonal$age19to39 + seasonal$age40up)
+seasonal$percent19to39 <- seasonal$age19to39 / (seasonal$ageu18 + seasonal$age19to39 + seasonal$age40up)
+seasonal$percent40up <- seasonal$age40up / (seasonal$ageu18 + seasonal$age19to39 + seasonal$age40up)
 
 locations <- read.csv("locations.csv",
   header = TRUE)

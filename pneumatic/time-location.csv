@@ -1,0 +1,145 @@
+hour,location,riders
+00:00,10th St Cycle Track,20
+00:00,BeltLine Irwin,3
+00:00,BeltLine Monroe,0
+00:00,BeltLine Ralph McGill,1
+00:00,Peachtree Center North,17
+00:00,Peachtree Center South,11
+01:00,10th St Cycle Track,6
+01:00,BeltLine Irwin,4
+01:00,BeltLine Monroe,4
+01:00,BeltLine Ralph McGill,2
+01:00,Peachtree Center North,6
+01:00,Peachtree Center South,3
+02:00,10th St Cycle Track,2
+02:00,BeltLine Irwin,2
+02:00,BeltLine Monroe,9
+02:00,BeltLine Ralph McGill,0
+02:00,Peachtree Center North,11
+02:00,Peachtree Center South,3
+03:00,10th St Cycle Track,3
+03:00,BeltLine Irwin,0
+03:00,BeltLine Monroe,6
+03:00,BeltLine Ralph McGill,1
+03:00,Peachtree Center North,4
+03:00,Peachtree Center South,1
+04:00,10th St Cycle Track,2
+04:00,BeltLine Irwin,1
+04:00,BeltLine Monroe,0
+04:00,BeltLine Ralph McGill,0
+04:00,Peachtree Center North,7
+04:00,Peachtree Center South,2
+05:00,10th St Cycle Track,17
+05:00,BeltLine Irwin,0
+05:00,BeltLine Monroe,0
+05:00,BeltLine Ralph McGill,0
+05:00,Peachtree Center North,17
+05:00,Peachtree Center South,2
+06:00,10th St Cycle Track,23
+06:00,BeltLine Irwin,2
+06:00,BeltLine Monroe,5
+06:00,BeltLine Ralph McGill,4
+06:00,Peachtree Center North,6
+06:00,Peachtree Center South,7
+07:00,10th St Cycle Track,80
+07:00,BeltLine Irwin,10
+07:00,BeltLine Monroe,8
+07:00,BeltLine Ralph McGill,5
+07:00,Peachtree Center North,16
+07:00,Peachtree Center South,17
+08:00,10th St Cycle Track,192
+08:00,BeltLine Irwin,34
+08:00,BeltLine Monroe,25
+08:00,BeltLine Ralph McGill,23
+08:00,Peachtree Center North,35
+08:00,Peachtree Center South,27
+09:00,10th St Cycle Track,250
+09:00,BeltLine Irwin,37
+09:00,BeltLine Monroe,50
+09:00,BeltLine Ralph McGill,29
+09:00,Peachtree Center North,36
+09:00,Peachtree Center South,33
+10:00,10th St Cycle Track,281
+10:00,BeltLine Irwin,61
+10:00,BeltLine Monroe,46
+10:00,BeltLine Ralph McGill,37
+10:00,Peachtree Center North,38
+10:00,Peachtree Center South,26
+11:00,10th St Cycle Track,321
+11:00,BeltLine Irwin,42
+11:00,BeltLine Monroe,80
+11:00,BeltLine Ralph McGill,21
+11:00,Peachtree Center North,105
+11:00,Peachtree Center South,36
+12:00,10th St Cycle Track,335
+12:00,BeltLine Irwin,44
+12:00,BeltLine Monroe,85
+12:00,BeltLine Ralph McGill,25
+12:00,Peachtree Center North,109
+12:00,Peachtree Center South,26
+13:00,10th St Cycle Track,319
+13:00,BeltLine Irwin,64
+13:00,BeltLine Monroe,95
+13:00,BeltLine Ralph McGill,33
+13:00,Peachtree Center North,132
+13:00,Peachtree Center South,27
+14:00,10th St Cycle Track,354
+14:00,BeltLine Irwin,120
+14:00,BeltLine Monroe,136
+14:00,BeltLine Ralph McGill,47
+14:00,Peachtree Center North,118
+14:00,Peachtree Center South,28
+15:00,10th St Cycle Track,406
+15:00,BeltLine Irwin,121
+15:00,BeltLine Monroe,58
+15:00,BeltLine Ralph McGill,37
+15:00,Peachtree Center North,532
+15:00,Peachtree Center South,23
+16:00,10th St Cycle Track,339
+16:00,BeltLine Irwin,98
+16:00,BeltLine Monroe,66
+16:00,BeltLine Ralph McGill,75
+16:00,Peachtree Center North,2183
+16:00,Peachtree Center South,38
+17:00,10th St Cycle Track,449
+17:00,BeltLine Irwin,121
+17:00,BeltLine Monroe,52
+17:00,BeltLine Ralph McGill,165
+17:00,Peachtree Center North,4266
+17:00,Peachtree Center South,62
+18:00,10th St Cycle Track,650
+18:00,BeltLine Irwin,93
+18:00,BeltLine Monroe,109
+18:00,BeltLine Ralph McGill,205
+18:00,Peachtree Center North,2219
+18:00,Peachtree Center South,32
+19:00,10th St Cycle Track,635
+19:00,BeltLine Irwin,55
+19:00,BeltLine Monroe,75
+19:00,BeltLine Ralph McGill,195
+19:00,Peachtree Center North,503
+19:00,Peachtree Center South,26
+20:00,10th St Cycle Track,328
+20:00,BeltLine Irwin,55
+20:00,BeltLine Monroe,38
+20:00,BeltLine Ralph McGill,108
+20:00,Peachtree Center North,133
+20:00,Peachtree Center South,20
+21:00,10th St Cycle Track,111
+21:00,BeltLine Irwin,24
+21:00,BeltLine Monroe,17
+21:00,BeltLine Ralph McGill,20
+21:00,Peachtree Center North,52
+21:00,Peachtree Center South,11
+22:00,10th St Cycle Track,65
+22:00,BeltLine Irwin,7
+22:00,BeltLine Monroe,9
+22:00,BeltLine Ralph McGill,6
+22:00,Peachtree Center North,60
+22:00,Peachtree Center South,9
+23:00,10th St Cycle Track,38
+23:00,BeltLine Irwin,1
+23:00,BeltLine Monroe,20
+23:00,BeltLine Ralph McGill,0
+23:00,Peachtree Center North,25
+23:00,Peachtree Center South,12

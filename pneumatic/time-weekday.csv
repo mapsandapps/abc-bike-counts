@@ -1,0 +1,289 @@
+hour,location,weekday,riders
+00:00,10th St Cycle Track,Weekday,10
+00:00,10th St Cycle Track,Weekend,10
+00:00,BeltLine Irwin,Weekday,3
+00:00,BeltLine Irwin,Weekend,0
+00:00,BeltLine Monroe,Weekday,0
+00:00,BeltLine Monroe,Weekend,0
+00:00,BeltLine Ralph McGill,Weekday,1
+00:00,BeltLine Ralph McGill,Weekend,0
+00:00,Peachtree Center North,Weekday,4
+00:00,Peachtree Center North,Weekend,13
+00:00,Peachtree Center South,Weekday,6
+00:00,Peachtree Center South,Weekend,5
+01:00,10th St Cycle Track,Weekday,1
+01:00,10th St Cycle Track,Weekend,5
+01:00,BeltLine Irwin,Weekday,4
+01:00,BeltLine Irwin,Weekend,0
+01:00,BeltLine Monroe,Weekday,4
+01:00,BeltLine Monroe,Weekend,0
+01:00,BeltLine Ralph McGill,Weekday,2
+01:00,BeltLine Ralph McGill,Weekend,0
+01:00,Peachtree Center North,Weekday,6
+01:00,Peachtree Center North,Weekend,0
+01:00,Peachtree Center South,Weekday,2
+01:00,Peachtree Center South,Weekend,1
+02:00,10th St Cycle Track,Weekday,1
+02:00,10th St Cycle Track,Weekend,1
+02:00,BeltLine Irwin,Weekday,2
+02:00,BeltLine Irwin,Weekend,0
+02:00,BeltLine Monroe,Weekday,8
+02:00,BeltLine Monroe,Weekend,1
+02:00,BeltLine Ralph McGill,Weekday,0
+02:00,BeltLine Ralph McGill,Weekend,0
+02:00,Peachtree Center North,Weekday,9
+02:00,Peachtree Center North,Weekend,2
+02:00,Peachtree Center South,Weekday,3
+02:00,Peachtree Center South,Weekend,0
+03:00,10th St Cycle Track,Weekday,0
+03:00,10th St Cycle Track,Weekend,3
+03:00,BeltLine Irwin,Weekday,0
+03:00,BeltLine Irwin,Weekend,0
+03:00,BeltLine Monroe,Weekday,6
+03:00,BeltLine Monroe,Weekend,0
+03:00,BeltLine Ralph McGill,Weekday,1
+03:00,BeltLine Ralph McGill,Weekend,0
+03:00,Peachtree Center North,Weekday,2
+03:00,Peachtree Center North,Weekend,2
+03:00,Peachtree Center South,Weekday,1
+03:00,Peachtree Center South,Weekend,0
+04:00,10th St Cycle Track,Weekday,1
+04:00,10th St Cycle Track,Weekend,1
+04:00,BeltLine Irwin,Weekday,1
+04:00,BeltLine Irwin,Weekend,0
+04:00,BeltLine Monroe,Weekday,0
+04:00,BeltLine Monroe,Weekend,0
+04:00,BeltLine Ralph McGill,Weekday,0
+04:00,BeltLine Ralph McGill,Weekend,0
+04:00,Peachtree Center North,Weekday,7
+04:00,Peachtree Center North,Weekend,0
+04:00,Peachtree Center South,Weekday,2
+04:00,Peachtree Center South,Weekend,0
+05:00,10th St Cycle Track,Weekday,15
+05:00,10th St Cycle Track,Weekend,2
+05:00,BeltLine Irwin,Weekday,0
+05:00,BeltLine Irwin,Weekend,0
+05:00,BeltLine Monroe,Weekday,0
+05:00,BeltLine Monroe,Weekend,0
+05:00,BeltLine Ralph McGill,Weekday,0
+05:00,BeltLine Ralph McGill,Weekend,0
+05:00,Peachtree Center North,Weekday,3
+05:00,Peachtree Center North,Weekend,14
+05:00,Peachtree Center South,Weekday,1
+05:00,Peachtree Center South,Weekend,1
+06:00,10th St Cycle Track,Weekday,19
+06:00,10th St Cycle Track,Weekend,4
+06:00,BeltLine Irwin,Weekday,2
+06:00,BeltLine Irwin,Weekend,0
+06:00,BeltLine Monroe,Weekday,4
+06:00,BeltLine Monroe,Weekend,1
+06:00,BeltLine Ralph McGill,Weekday,4
+06:00,BeltLine Ralph McGill,Weekend,0
+06:00,Peachtree Center North,Weekday,0
+06:00,Peachtree Center North,Weekend,6
+06:00,Peachtree Center South,Weekday,5
+06:00,Peachtree Center South,Weekend,2
+07:00,10th St Cycle Track,Weekday,70
+07:00,10th St Cycle Track,Weekend,10
+07:00,BeltLine Irwin,Weekday,10
+07:00,BeltLine Irwin,Weekend,0
+07:00,BeltLine Monroe,Weekday,8
+07:00,BeltLine Monroe,Weekend,0
+07:00,BeltLine Ralph McGill,Weekday,5
+07:00,BeltLine Ralph McGill,Weekend,0
+07:00,Peachtree Center North,Weekday,7
+07:00,Peachtree Center North,Weekend,9
+07:00,Peachtree Center South,Weekday,16
+07:00,Peachtree Center South,Weekend,1
+08:00,10th St Cycle Track,Weekday,128
+08:00,10th St Cycle Track,Weekend,64
+08:00,BeltLine Irwin,Weekday,32
+08:00,BeltLine Irwin,Weekend,2
+08:00,BeltLine Monroe,Weekday,19
+08:00,BeltLine Monroe,Weekend,6
+08:00,BeltLine Ralph McGill,Weekday,23
+08:00,BeltLine Ralph McGill,Weekend,0
+08:00,Peachtree Center North,Weekday,24
+08:00,Peachtree Center North,Weekend,11
+08:00,Peachtree Center South,Weekday,26
+08:00,Peachtree Center South,Weekend,1
+09:00,10th St Cycle Track,Weekday,139
+09:00,10th St Cycle Track,Weekend,111
+09:00,BeltLine Irwin,Weekday,36
+09:00,BeltLine Irwin,Weekend,1
+09:00,BeltLine Monroe,Weekday,42
+09:00,BeltLine Monroe,Weekend,8
+09:00,BeltLine Ralph McGill,Weekday,27
+09:00,BeltLine Ralph McGill,Weekend,2
+09:00,Peachtree Center North,Weekday,21
+09:00,Peachtree Center North,Weekend,15
+09:00,Peachtree Center South,Weekday,28
+09:00,Peachtree Center South,Weekend,5
+10:00,10th St Cycle Track,Weekday,115
+10:00,10th St Cycle Track,Weekend,166
+10:00,BeltLine Irwin,Weekday,39
+10:00,BeltLine Irwin,Weekend,22
+10:00,BeltLine Monroe,Weekday,24
+10:00,BeltLine Monroe,Weekend,22
+10:00,BeltLine Ralph McGill,Weekday,35
+10:00,BeltLine Ralph McGill,Weekend,2
+10:00,Peachtree Center North,Weekday,33
+10:00,Peachtree Center North,Weekend,5
+10:00,Peachtree Center South,Weekday,22
+10:00,Peachtree Center South,Weekend,4
+11:00,10th St Cycle Track,Weekday,70
+11:00,10th St Cycle Track,Weekend,251
+11:00,BeltLine Irwin,Weekday,23
+11:00,BeltLine Irwin,Weekend,19
+11:00,BeltLine Monroe,Weekday,37
+11:00,BeltLine Monroe,Weekend,43
+11:00,BeltLine Ralph McGill,Weekday,21
+11:00,BeltLine Ralph McGill,Weekend,0
+11:00,Peachtree Center North,Weekday,45
+11:00,Peachtree Center North,Weekend,60
+11:00,Peachtree Center South,Weekday,33
+11:00,Peachtree Center South,Weekend,3
+12:00,10th St Cycle Track,Weekday,101
+12:00,10th St Cycle Track,Weekend,234
+12:00,BeltLine Irwin,Weekday,23
+12:00,BeltLine Irwin,Weekend,21
+12:00,BeltLine Monroe,Weekday,35
+12:00,BeltLine Monroe,Weekend,50
+12:00,BeltLine Ralph McGill,Weekday,21
+12:00,BeltLine Ralph McGill,Weekend,4
+12:00,Peachtree Center North,Weekday,48
+12:00,Peachtree Center North,Weekend,61
+12:00,Peachtree Center South,Weekday,21
+12:00,Peachtree Center South,Weekend,5
+13:00,10th St Cycle Track,Weekday,107
+13:00,10th St Cycle Track,Weekend,212
+13:00,BeltLine Irwin,Weekday,32
+13:00,BeltLine Irwin,Weekend,32
+13:00,BeltLine Monroe,Weekday,34
+13:00,BeltLine Monroe,Weekend,61
+13:00,BeltLine Ralph McGill,Weekday,31
+13:00,BeltLine Ralph McGill,Weekend,2
+13:00,Peachtree Center North,Weekday,55
+13:00,Peachtree Center North,Weekend,77
+13:00,Peachtree Center South,Weekday,23
+13:00,Peachtree Center South,Weekend,4
+14:00,10th St Cycle Track,Weekday,160
+14:00,10th St Cycle Track,Weekend,194
+14:00,BeltLine Irwin,Weekday,49
+14:00,BeltLine Irwin,Weekend,71
+14:00,BeltLine Monroe,Weekday,49
+14:00,BeltLine Monroe,Weekend,87
+14:00,BeltLine Ralph McGill,Weekday,46
+14:00,BeltLine Ralph McGill,Weekend,1
+14:00,Peachtree Center North,Weekday,85
+14:00,Peachtree Center North,Weekend,33
+14:00,Peachtree Center South,Weekday,24
+14:00,Peachtree Center South,Weekend,4
+15:00,10th St Cycle Track,Weekday,196
+15:00,10th St Cycle Track,Weekend,210
+15:00,BeltLine Irwin,Weekday,66
+15:00,BeltLine Irwin,Weekend,55
+15:00,BeltLine Monroe,Weekday,31
+15:00,BeltLine Monroe,Weekend,27
+15:00,BeltLine Ralph McGill,Weekday,37
+15:00,BeltLine Ralph McGill,Weekend,0
+15:00,Peachtree Center North,Weekday,515
+15:00,Peachtree Center North,Weekend,17
+15:00,Peachtree Center South,Weekday,20
+15:00,Peachtree Center South,Weekend,3
+16:00,10th St Cycle Track,Weekday,167
+16:00,10th St Cycle Track,Weekend,172
+16:00,BeltLine Irwin,Weekday,69
+16:00,BeltLine Irwin,Weekend,29
+16:00,BeltLine Monroe,Weekday,38
+16:00,BeltLine Monroe,Weekend,28
+16:00,BeltLine Ralph McGill,Weekday,75
+16:00,BeltLine Ralph McGill,Weekend,0
+16:00,Peachtree Center North,Weekday,2168
+16:00,Peachtree Center North,Weekend,15
+16:00,Peachtree Center South,Weekday,28
+16:00,Peachtree Center South,Weekend,10
+17:00,10th St Cycle Track,Weekday,228
+17:00,10th St Cycle Track,Weekend,221
+17:00,BeltLine Irwin,Weekday,90
+17:00,BeltLine Irwin,Weekend,31
+17:00,BeltLine Monroe,Weekday,46
+17:00,BeltLine Monroe,Weekend,6
+17:00,BeltLine Ralph McGill,Weekday,165
+17:00,BeltLine Ralph McGill,Weekend,0
+17:00,Peachtree Center North,Weekday,4249
+17:00,Peachtree Center North,Weekend,17
+17:00,Peachtree Center South,Weekday,53
+17:00,Peachtree Center South,Weekend,9
+18:00,10th St Cycle Track,Weekday,454
+18:00,10th St Cycle Track,Weekend,196
+18:00,BeltLine Irwin,Weekday,89
+18:00,BeltLine Irwin,Weekend,4
+18:00,BeltLine Monroe,Weekday,100
+18:00,BeltLine Monroe,Weekend,9
+18:00,BeltLine Ralph McGill,Weekday,205
+18:00,BeltLine Ralph McGill,Weekend,0
+18:00,Peachtree Center North,Weekday,2191
+18:00,Peachtree Center North,Weekend,28
+18:00,Peachtree Center South,Weekday,25
+18:00,Peachtree Center South,Weekend,7
+19:00,10th St Cycle Track,Weekday,474
+19:00,10th St Cycle Track,Weekend,161
+19:00,BeltLine Irwin,Weekday,54
+19:00,BeltLine Irwin,Weekend,1
+19:00,BeltLine Monroe,Weekday,64
+19:00,BeltLine Monroe,Weekend,11
+19:00,BeltLine Ralph McGill,Weekday,195
+19:00,BeltLine Ralph McGill,Weekend,0
+19:00,Peachtree Center North,Weekday,489
+19:00,Peachtree Center North,Weekend,14
+19:00,Peachtree Center South,Weekday,23
+19:00,Peachtree Center South,Weekend,3
+20:00,10th St Cycle Track,Weekday,253
+20:00,10th St Cycle Track,Weekend,75
+20:00,BeltLine Irwin,Weekday,55
+20:00,BeltLine Irwin,Weekend,0
+20:00,BeltLine Monroe,Weekday,26
+20:00,BeltLine Monroe,Weekend,12
+20:00,BeltLine Ralph McGill,Weekday,108
+20:00,BeltLine Ralph McGill,Weekend,0
+20:00,Peachtree Center North,Weekday,63
+20:00,Peachtree Center North,Weekend,70
+20:00,Peachtree Center South,Weekday,16
+20:00,Peachtree Center South,Weekend,4
+21:00,10th St Cycle Track,Weekday,73
+21:00,10th St Cycle Track,Weekend,38
+21:00,BeltLine Irwin,Weekday,24
+21:00,BeltLine Irwin,Weekend,0
+21:00,BeltLine Monroe,Weekday,15
+21:00,BeltLine Monroe,Weekend,2
+21:00,BeltLine Ralph McGill,Weekday,20
+21:00,BeltLine Ralph McGill,Weekend,0
+21:00,Peachtree Center North,Weekday,31
+21:00,Peachtree Center North,Weekend,21
+21:00,Peachtree Center South,Weekday,9
+21:00,Peachtree Center South,Weekend,2
+22:00,10th St Cycle Track,Weekday,43
+22:00,10th St Cycle Track,Weekend,22
+22:00,BeltLine Irwin,Weekday,7
+22:00,BeltLine Irwin,Weekend,0
+22:00,BeltLine Monroe,Weekday,8
+22:00,BeltLine Monroe,Weekend,1
+22:00,BeltLine Ralph McGill,Weekday,6
+22:00,BeltLine Ralph McGill,Weekend,0
+22:00,Peachtree Center North,Weekday,32
+22:00,Peachtree Center North,Weekend,28
+22:00,Peachtree Center South,Weekday,6
+22:00,Peachtree Center South,Weekend,3
+23:00,10th St Cycle Track,Weekday,9
+23:00,10th St Cycle Track,Weekend,29
+23:00,BeltLine Irwin,Weekday,0
+23:00,BeltLine Irwin,Weekend,1
+23:00,BeltLine Monroe,Weekday,20
+23:00,BeltLine Monroe,Weekend,0
+23:00,BeltLine Ralph McGill,Weekday,0
+23:00,BeltLine Ralph McGill,Weekend,0
+23:00,Peachtree Center North,Weekday,10
+23:00,Peachtree Center North,Weekend,15
+23:00,Peachtree Center South,Weekday,9
+23:00,Peachtree Center South,Weekend,3
