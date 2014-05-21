@@ -1,0 +1,6 @@
+#weekday-beltline,#weekday-other,#weekend-beltline,#weekend-other {
+  width: 48%;
+  display: inline-block;
+  text-align: center;
+  font-size: 130%;
+}
