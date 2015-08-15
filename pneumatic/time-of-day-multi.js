@@ -1,4 +1,4 @@
-d3.csv("http://mollietaylor.com/abc-bike-counts/pneumatic/for-d3.csv", function(d) {
+d3.csv("http://proximityviz.com/abc-bike-counts/pneumatic/for-d3.csv", function(d) {
   return {
     hour: d.hour,
     WeekdayBeltline: +d.WeekdayBeltline,

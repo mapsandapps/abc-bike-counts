@@ -1,0 +1,35 @@
+goal: share data & tell atl cycling narrative
+
+key intersections
+
+key question: growth over time
+
+women
+
+polygon graph per year
+
+census data: commute by bike
+
+need to check data cleaning
+
+select different categories (not just season, but helmets, women, etc)
+
+weighted arrows for directions
+
+ABC planning intern
+
+layer with pneumatic tube data
+
+to do list:
+reclean data and export
+	send them the data the way they should be stored
+make it where they can update the data and it will automatically update visualizations and tables
+animated map?
+analyze growth over time
+look at census block data
+graphs inside popups
+what to do with traffic laws
+compare springs and falls
+
+
+

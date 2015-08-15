@@ -38,6 +38,11 @@ beltlineData <- ddply(pneu, .(hour, weekday, beltline), summarize,
     sum(wb, na.rm = TRUE) + 
     sum(eb, na.rm = TRUE)) / length(hour))
 
+library(ggplot2)
+ggplot(beltlineData[beltlineData$weekday == "Weekday" & beltlineData$beltline == "Beltline",],
+  aes(x = hour, y = ridersPerHour)) +
+geom_bar()
+
 library(reshape)
 beltlineWide <- cast(beltlineData[beltlineData$beltline == "Beltline",], hour ~ weekday)
 notBeltlineWide <- cast(beltlineData[beltlineData$beltline == "Not Beltline",], hour ~ weekday)

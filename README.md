@@ -1,6 +1,6 @@
 Links
 -----
-* [This map](http://mollietaylor.com/skills/js/leaflet/abc-bike-counts/)
+* [This map](http://proximityviz.com/abc-bike-counts/)
 * [ABC map](https://maps.google.com/maps/ms?msa=0&msid=207303117555710580147.0004cccef4743cbbddec0&ie=UTF8&t=m&ll=33.788849,-84.379463&spn=0.13696,0.219727&z=12&source=embed)
 * [Full data](https://www.dropbox.com/sh/i1pdkccpto3rcgk/8kvUniSjZr)
 
